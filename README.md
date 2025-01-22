@@ -13,7 +13,11 @@
 ### a)PostgreSQL
     
     https://sbp.enterprisedb.com/getfile.jsp?fileid=1259337
-下载好之后安装到你知道的位置，一路默认就行，但是要记住你的密码和data文件夹在哪；
+下载好之后安装到你知道的位置，一路默认就行，但是要记住你的密码和data文件夹在哪；  
+
+然后在环境变量里添加你安装的SQL的文件夹\bin的位置，比如我的就是“D:\PostgreSQL\bin”。  
+
+（如何添加？右键“此电脑”，属性，高级系统设置，环境变量，用户的环境变量中双击“path”，新建，框里填\你安装的文件夹所在位置，比如PostgreSQL\bin，确定，确定，确定）  
 ### b)Rust
     
     https://static.rust-lang.org/rustup/dist/x86_64-pc-windows-msvc/rustup-init.exe
@@ -21,9 +25,9 @@
 ### c)Protoc
     
     https://github.com/protocolbuffers/protobuf/releases/download/v29.3/protoc-29.3-win64.zip
-解压文件夹到一个你看着顺眼的位置，然后把"\你解压的文件夹所在位置\protoc-29.3-win64\bin"添加到环境变量的path。  
+解压文件夹到一个你看着顺眼的位置，然后把"\你解压的文件夹所在位置\protoc-29.3-win64\bin"添加到环境变量的path。    
 
-（如何添加？右键“此电脑”，属性，高级系统设置，环境变量，用户的环境变量中双击“path”，新建，框里填\你解压的文件夹所在位置\protoc-29.3-win64\bin，确定，确定，确定）  
+添加环境变量同上；  
 
 ### d)wicked-waifus-rs(https://git.xeondev.com/wickedwaifus/wicked-waifus-rs)
 在你要接收文件的文件夹里右键-->在终端中打开，输入：
