@@ -114,4 +114,19 @@ db_name = "wicked_waifus_db"
 和CrashSight64.dll一起，放在“\Wuthering Waves(Beta)\Wuthering Waves Game\Client\Binaries\Win64\"目录下
 ## 12、在五个终端和数据库开着的情况下，
 双击“\Wuthering Waves(Beta)\Wuthering Waves Game\Client\Binaries\Win64\"目录下的Client-Win64-Shipping.exe，开始游戏，进去的登录曲变了你就成功了。
-进去后新创角色啥的功能你就自己探索了。
+进去后新创角色啥的功能你就自己探索了。  
+
+## 13、怎么快速启动那五个cargo的服务
+(来自@Castorice的建议)
+每次打开五个服务都很麻烦。  
+如果你已经配置好了并且多次运行都可以成功，可以在wicked-waifus-rs的文件夹里新建一个runall.bat文件，  
+用记事本写入：  
+    
+    @echo off
+    start cmd /K "cargo run -r --bin wicked-waifus-config-server"
+    start cmd /K "cargo run -r --bin wicked-waifus-hotpatch-server"
+    start cmd /K "cargo run -r --bin wicked-waifus-login-server"
+    start cmd /K "cargo run -r --bin wicked-waifus-gateway-server"
+    start cmd /K "cargo run -r --bin wicked-waifus-game-server"
+    exit
+保存好后下次直接双击这个runall.bat文件就可以同时秒开5个cargo的服务了！
