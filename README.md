@@ -21,9 +21,11 @@
 ### c)Protoc
     
     https://github.com/protocolbuffers/protobuf/releases/download/v29.3/protoc-29.3-win64.zip
-解压文件夹到一个你看着顺眼的位置，然后把"\你解压的文件夹所在位置\protoc-29.3-win64\bin"添加到环境变量的path。
-~（如何添加？右键“此电脑”，属性，高级系统设置，环境变量，用户的环境变量中双击“path”，新建，框里填\你解压的文件夹所在位置\protoc-29.3-win64\bin，确定，确定，确定）~
-d)wicked-waifus-rs(https://git.xeondev.com/wickedwaifus/wicked-waifus-rs)
+解压文件夹到一个你看着顺眼的位置，然后把"\你解压的文件夹所在位置\protoc-29.3-win64\bin"添加到环境变量的path。  
+
+（如何添加？右键“此电脑”，属性，高级系统设置，环境变量，用户的环境变量中双击“path”，新建，框里填\你解压的文件夹所在位置\protoc-29.3-win64\bin，确定，确定，确定）  
+
+### d)wicked-waifus-rs(https://git.xeondev.com/wickedwaifus/wicked-waifus-rs)
 在你要接收文件的文件夹里右键-->在终端中打开，输入：
     
     git clone --recursive https://git.xeondev.com/wickedwaifus/wicked-waifus-rs.git
@@ -83,9 +85,11 @@ db_name = "wicked_waifus_db"
     lc_numeric = 'en_US.UTF-8' # locale for number formatting
     lc_time = 'en_US.UTF-8' # locale for time formatting
 
-### 注意：每次修改文件后，都需要到服务里重启PostgreSQL服务。
-~（如何重启服务？win+r，输入services.msc，回车，找到“postgresql-x64-17 - PostgreSQL Server 17”服务，右键-->重新启动）~
-=====================分界线=============================
+### 注意：每次修改文件后，都需要到服务里重启PostgreSQL服务。  
+
+（如何重启服务？win+r，输入services.msc，回车，找到“postgresql-x64-17 - PostgreSQL Server 17”服务，右键-->重新启动）  
+
+## =====================分界线=============================
 如果你五个终端都跑通了，没有爆红，没有异常退出，再接着往下！
 ## 9、下载.pak文件
     
