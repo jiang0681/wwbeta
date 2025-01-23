@@ -1,6 +1,8 @@
 # 如何玩ww2.1测试私服(此篇教程仅适用于64位windows-中文版系统)  
 ## 测试服来源于：https://git.xeondev.com/wickedwaifus/wicked-waifus-rs/  
-## 我只是写了一个教程，我不是这个软件的作者
+## 我只是写了一个教程，我不是这个软件的作者  
+## If you cannot read Chinese， please use translation softwares or plugins to help yourself.  
+ 
 ## 1、下载测试服启动器：    
 
     https://pcdownload-huoshan.aki-game.com/pcstarter/prod/starter/10008_Pa0Q0EMFxukjEqX33pF9Uyvdc8MaGPSz/G152/1.7.1.0/cDKioEuJvj9zCC9Q04iF3pNG2JBm9rhj/installer.exe
