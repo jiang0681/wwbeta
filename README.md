@@ -1,6 +1,6 @@
 # 如何玩ww2.1测试私服  
 (仅适用于64位windows)(2025/01/24)  
-# 视频教程请访问Youtube：
+# 私服作者也做了一个视频教程，请访问Youtube：
 https://www.youtube.com/watch?v=jGISWOXrZks
 ## 测试服来源于：https://git.xeondev.com/wickedwaifus/wicked-waifus-rs/  
 ## 我只是写了一个教程，我不是这个软件的作者  
@@ -113,14 +113,24 @@ db_name = "wicked_waifus_db"
     
     https://github.com/jiang0681/wwbeta/releases/download/1/CrashSight64.dll
 放在“\Wuthering Waves(Beta)\Wuthering Waves Game\Client\Binaries\Win64\"目录下，覆盖掉原来的CrashSight64.dll文件！！！
-## 11、下载winhttp.dll和libraries.txt文件  
-（这一步如果你不做你的游戏会光速崩溃）
+## 11、有两种防崩溃的方法
+（这一步如果你不做你的游戏会光速崩溃）  
+
+两种方法任选其一即可
+### a)下载winhttp.dll和libraries.txt文件
     
     https://github.com/jiang0681/wwbeta/releases/download/1/winhttp.dll
 和
     
     https://github.com/jiang0681/wwbeta/releases/download/1/libraries.txt
 和CrashSight64.dll一起，放在“\Wuthering Waves(Beta)\Wuthering Waves Game\Client\Binaries\Win64\"目录下
+### b)用xavo95的launcher.exe  
+下载地址：
+
+    https://git.xeondev.com/xavo95/launcher/releases
+参考视频：
+    
+    https://www.youtube.com/watch?v=kLA0kONBT_s
 ## 12、在五个终端和数据库开着的情况下，
 双击“\Wuthering Waves(Beta)\Wuthering Waves Game\Client\Binaries\Win64\"目录下的Client-Win64-Shipping.exe，开始游戏，进去的登录曲变了你就成功了。
 进去后新创角色啥的功能你就自己探索了。  
