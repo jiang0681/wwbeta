@@ -144,6 +144,7 @@ db_name = "wicked_waifus_db"
 
     let formation = vec![1506, 1206, 1606];
 这里的三个四位数字分别代表你进去后队伍里的三个角色的唯一编号。  
+
 但是直接修改是不够的。应遵循以下步骤：
 ### 0、退出游戏，退出所有5个cmd终端
 ### a)在mod.rs文件里，将三个数字修改为你想要的三个角色的编号。  
@@ -151,7 +152,9 @@ db_name = "wicked_waifus_db"
     
     https://git.xeondev.com/wickedwaifus/wicked-waifus-data/src/branch/master/BinData/RoleInfo.json
 里找。 ） 
+
 提示：看到文件后可以发现第一个id：1402是秧秧，其他角色的对应方法自己类比，没办法细讲；  
+
 修改好后记得保存文件；
 ### b)打开你的pgAdmin4(前面有讲)，删除你的wicked_waifus_db数据库，然后再重新建一个一样的  
 (实际上不必要删除这个，但是这样最省事)
@@ -163,12 +166,15 @@ db_name = "wicked_waifus_db"
 
     const DEFAULT_INSTANCE_ID: i32 = 8;
 这个i32等于多少你就会进入到这个编号代表的哪个地图里。当然了也不是直接改就能生效的。  
+
 地图及其对应编号在
 
     https://git.xeondev.com/wickedwaifus/wicked-waifus-data/src/branch/master/BinData/AkiMap.json
 里。
+
 提示：地下金库（云底藏馆）对应编号是902; 
-修改好之后重复你改角色用的b)、c)、d)、这三个步骤，进入游戏就直接是你想要进入的地图了。
+
+修改好 i32=几几几 之后，重复你改角色用的0、b)、c)、d)、这几个步骤，进入游戏就直接是你想要进入的地图了。
 ## 16、其他功能不妨直接来Discord里问作者  
 
 我只是一个搬砖的（  
