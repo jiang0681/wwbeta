@@ -1,7 +1,10 @@
-# 如何玩ww2.1测试私服(此篇教程仅适用于64位windows-中文版系统)  
+# 如何玩ww2.1测试私服  
+(仅适用于64位windows)(2025/01/24)  
 ## 测试服来源于：https://git.xeondev.com/wickedwaifus/wicked-waifus-rs/  
 ## 我只是写了一个教程，我不是这个软件的作者  
-## If you cannot read Chinese， please use translation softwares or plugins to help yourself.  
+## If you cannot read Chinese，please use translation softwares or plugins to help yourself.  
+## 如果你在Discord里找我问这篇教程能帮你解决的问题，我一概看不见；  
+## 如果有新问题欢迎来讨论
  
 ## 1、下载测试服启动器：    
 
@@ -38,7 +41,8 @@
     
     git clone --recursive https://git.xeondev.com/wickedwaifus/wicked-waifus-rs.git
 等待克隆完成后，记住这个文件夹的位置，等下回来要用；
-## 7、找到开始菜单里的pgAdmin4并打开(或者直接去你“安装PostgreSQL的文件夹\pgAdmin4\runtime\”下，找到pgAdmin4.exe双击打开)，
+## 7、找到开始菜单里的pgAdmin4并打开  
+(或者直接去你“安装PostgreSQL的文件夹\pgAdmin4\runtime\”下，找到pgAdmin4.exe双击打开)，  
 等待pgAdmin4打开后，在左边的边栏选中Servers-->PostgreSQL-->Databases，
 在”Databases“文字上右键-->create-->Database...，
 第一栏填写它的名字为wicked_waifus_db，
@@ -107,7 +111,8 @@ db_name = "wicked_waifus_db"
     
     https://github.com/jiang0681/wwbeta/releases/download/1/CrashSight64.dll
 放在“\Wuthering Waves(Beta)\Wuthering Waves Game\Client\Binaries\Win64\"目录下，覆盖掉原来的CrashSight64.dll文件！！！
-## 11、下载winhttp.dll和libraries.txt文件
+## 11、下载winhttp.dll和libraries.txt文件  
+（这一步如果你不做你的游戏会光速崩溃）
     
     https://github.com/jiang0681/wwbeta/releases/download/1/winhttp.dll
 和
@@ -132,3 +137,40 @@ db_name = "wicked_waifus_db"
     start cmd /K "cargo run -r --bin wicked-waifus-game-server"
     exit
 保存好后下次直接双击这个runall.bat文件就可以同时秒开5个cargo的服务了！
+
+# 2025/01/24教程新增：获取指定角色和进入指定副本地图方法
+## 14、获取指定角色
+找到\wicked-waifus-rs\wicked-waifus-game-server\src\logic\player\mod.rs文件，第135行，
+
+    let formation = vec![1506, 1206, 1606];
+这里的三个四位数字分别代表你进去后队伍里的三个角色的唯一编号。  
+但是直接修改是不够的。应遵循以下步骤：
+### 0、退出游戏，退出所有5个cmd终端
+### a)在mod.rs文件里，将三个数字修改为你想要的三个角色的编号。  
+（角色及对应编号在
+    
+    https://git.xeondev.com/wickedwaifus/wicked-waifus-data/src/branch/master/BinData/RoleInfo.json
+里找。 ） 
+提示：看到文件后可以发现第一个id：1402是秧秧，其他角色的对应方法自己类比，没办法细讲；  
+修改好后记得保存文件；
+### b)打开你的pgAdmin4(前面有讲)，删除你的wicked_waifus_db数据库，然后再重新建一个一样的  
+(实际上不必要删除这个，但是这样最省事)
+### c)重新运行那5个cargo指令，应该会重新编译的所以时间稍微长一点  
+### d)进入游戏，点击右下角的新建一个角色账户，此时角色应该就是你改的那3个了。  
+如果不是的话，你失败了，重新看一遍你的过程重新来。
+## 15、进入指定地图
+找到\wicked-waifus-rs\wicked-waifus-game-server\src\logic\player\location.rs文件，第12行，
+
+    const DEFAULT_INSTANCE_ID: i32 = 8;
+这个i32等于多少你就会进入到这个编号代表的哪个地图里。当然了也不是直接改就能生效的。  
+地图及其对应编号在
+
+    https://git.xeondev.com/wickedwaifus/wicked-waifus-data/src/branch/master/BinData/AkiMap.json
+里。
+提示：地下金库（云底藏馆）对应编号是902; 
+修改好之后重复你改角色用的b)、c)、d)、这三个步骤，进入游戏就直接是你想要进入的地图了。
+## 16、其他功能不妨直接来Discord里问作者  
+
+我只是一个搬砖的（  
+
+https://discord.gg/626PmU85bS
