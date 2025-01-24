@@ -42,7 +42,42 @@ https://www.youtube.com/watch?v=jGISWOXrZks
 在你要接收文件的文件夹里右键-->在终端中打开，输入：
     
     git clone --recursive https://git.xeondev.com/wickedwaifus/wicked-waifus-rs.git
-等待克隆完成后，记住这个文件夹的位置，等下回来要用；
+等待克隆完成后，你需要确认一下它有没有漏记住这个文件夹的位置，等下回来要用；  
+（这里不推荐直接去网页下载zip包，因为会漏两个文件夹。   
+
+===============================================
+
+## 很多人都遇到的问题：I/O error  
+
+I/O error: 根据经验，是因为你文件没下载完。  
+
+如果git clone不好使, 你可以直接下载源码的zip包但是，你要做一点修补工作，   
+
+#### a)wicked-waifus-rs
+
+    https://git.xeondev.com/wickedwaifus/wicked-waifus-rs/archive/master.zip
+
+下载好后解压, 然后你还要去两个地方下载缺省的两个文件夹放在对应的位置。  
+
+#### b)wicked-waifus-config-server-files  
+    
+    https://git.xeondev.com/wickedwaifus/wicked-waifus-config-server-files/archive/main.zip
+解压后放在\wicked-waifus-rs\data\assets\config-server\文件夹里面，  
+
+config-server文件夹里应该直接有bpIWdherKqwfYUO5gIE5fnMfOL4PmBty文件夹，不要在外面再套一层文件夹；
+
+最后确保有\wicked-waifus-rs\data\assets\config-server\bpIWdherKqwfYUO5gIE5fnMfOL4PmBty\就行；
+#### c)wicked-waifus-data
+
+    https://git.xeondev.com/wickedwaifus/wicked-waifus-data/archive/master.zip
+解压后放在\wicked-waifus-rs\data\assets\game-data\文件夹里，  
+
+最后\game-data\里应该有BinData, CustomData等等文件夹和一些文件，外面也不要套壳；  
+
+然后wicked-waifus-rs才算完整的下载完毕。。。
+
+===================================================
+
 ## 7、找到开始菜单里的pgAdmin4并打开  
 (或者直接去你“安装PostgreSQL的文件夹\pgAdmin4\runtime\”下，找到pgAdmin4.exe双击打开)，  
 等待pgAdmin4打开后，在左边的边栏选中Servers-->PostgreSQL-->Databases，
@@ -103,8 +138,6 @@ db_name = "wicked_waifus_db"
 
 （如何重启服务？win+r，输入services.msc，回车，找到“postgresql-x64-17 - PostgreSQL Server 17”服务，右键-->重新启动）  
 
-### 很多人都遇到的问题：I/O error
-I/O error: 你文件没下载完。如果git clone不好使,你可以直接下载源码的zip包;
 
 ## =====================分界线=============================
 如果你五个终端都跑通了，没有爆红，没有异常退出，再接着往下！
