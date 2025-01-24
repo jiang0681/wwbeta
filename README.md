@@ -101,6 +101,9 @@ db_name = "wicked_waifus_db"
 
 ### 注意：每次修改文件后，都需要到服务里重启PostgreSQL服务。  
 
+### 很多人都遇到的问题：I/O error
+I/O error: 你文件没下载完。如果git clone不好使,你可以直接下载源码的zip包;
+
 （如何重启服务？win+r，输入services.msc，回车，找到“postgresql-x64-17 - PostgreSQL Server 17”服务，右键-->重新启动）  
 
 ## =====================分界线=============================
