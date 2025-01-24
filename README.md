@@ -1,5 +1,7 @@
 # 如何玩ww2.1测试私服  
 (仅适用于64位windows)(2025/01/24)  
+# 视频教程请访问Youtube：
+https://www.youtube.com/watch?v=jGISWOXrZks
 ## 测试服来源于：https://git.xeondev.com/wickedwaifus/wicked-waifus-rs/  
 ## 我只是写了一个教程，我不是这个软件的作者  
 ## If you cannot read Chinese，please use translation softwares or plugins to help yourself.  
