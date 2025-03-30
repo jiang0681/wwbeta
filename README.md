@@ -199,7 +199,8 @@ db_name = "wicked_waifus_db"
 （角色及对应编号在
     
     https://git.xeondev.com/wickedwaifus/wicked-waifus-data/src/branch/master/BinData/RoleInfo.json
-里找。 ） 
+    https://github.com/yuhkix/wuwa-ids/blob/main/characters.md
+里找。） 
 
 提示：看到文件后可以发现第一个id：1402是秧秧，其他角色的对应方法自己类比，没办法细讲；  
 
