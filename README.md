@@ -22,7 +22,7 @@ If you cannot read Chinese，please use translation softwares or plugins to help
 
 下面开始。  
 ## 目录：  
-[1、安装必需软件和环境](#1%E3%80%81%E5%AE%89%E8%A3%85%E5%BF%85%E9%9C%80%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%8E%AF%E5%A2%83)
+[1、安装必需软件和环境](#1%E3%80%81%E5%AE%89%E8%A3%85%E5%BF%85%E9%9C%80%E8%BD%AF%E4%BB%B6%E5%92%8C%E7%8E%AF%E5%A2%83)  
 [2、下载游戏本体](#2%E4%B8%8B%E8%BD%BD%E6%B8%B8%E6%88%8F%E6%9C%AC%E4%BD%93)  
 [3、给游戏本体打补丁](#3%E7%BB%99%E6%B8%B8%E6%88%8F%E6%9C%AC%E4%BD%93%E6%89%93%E8%A1%A5%E4%B8%81)  
 [4、下载PS并配置](#4%E4%B8%8B%E8%BD%BDps%E5%B9%B6%E9%85%8D%E7%BD%AE)  
