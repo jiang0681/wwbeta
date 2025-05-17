@@ -228,7 +228,8 @@ const DEFAULT_INSTANCE_ID: i32 = 8;
 "Energy": 0,         -> 改为 1
 ```
 
-即可实现无CD大招和满能量状态。  
+即可实现无CD大招和满能量状态。   
+
 ### 6.4 新衣服呢？
 方法by: Xx-wpc@discord  
 找到  
@@ -239,3 +240,33 @@ wicked-waifus-rs\data\assets\game-data\BinData\RoleInfo.json
 搜索角色id后找到对应SkinId，长离和珂莱塔的SkinId的第四位0改成1即可切换成泳装。  
 同理如果想换手上的武器，修改InitWeaponItemId即可。  
 提示：lupa武器 21010036 小卡武器 21020056  
+如果不显示，再进入  
+`
+wicked-waifus-rs\wicked-waifus-game-server\src\logic\role\mod.rs
+`  
+在131行(帮助你定位):   
+`
+let base_stats = &get_role_props_by_level(role_id, level, breakthrough);
+`
+后面加代码（方法by：BOT@discord）：  
+`
+        //for changli
+        let skin_id = if role_id == 1205 {
+            81011205
+        }else {
+            data.skin_id
+        };
+        //for catxy
+        let equip_weapon = if role_id == 1409 {
+            21020056
+        }else {
+            data.init_weapon_item_id
+        };
+        //for lupa
+        let equip_weapon = if role_id == 1207 {
+            21010036
+        }else {
+            data.init_weapon_item_id
+        };
+`
+这个是硬编码进去了，需要重编译才能看到结果。
