@@ -43,7 +43,7 @@ If you cannot read Chinese，please use translation softwares or plugins to help
 下载最新版本，安装，一路默认就行。
 
 ### 1.3 [protoc](https://github.com/protocolbuffers/protobuf/releases)
-下载最新版本，解压，把`\你解压的文件夹所在位置\protoc-31.0-win64in`添加到系统环境变量的path。  
+下载最新版本，解压，把`\你解压的文件夹所在位置\protoc-31.0-win64\bin`添加到系统环境变量的path。  
 （如何添加到系统环境变量？右键“此电脑”，属性，高级系统设置，环境变量，用户的环境变量中双击“path”，新建，框里填如：`protoc-31.0-win64/bin`，确定，确定，确定）  
 
 ## 2、下载游戏本体
