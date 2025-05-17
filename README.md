@@ -178,7 +178,7 @@ db_name = "wicked_waifus_db"
 
 ## 5、启动
 每次启动仅需双击 `runPS.bat` 后双击 `run_xavo_launcher.bat` 即可。  
-PostgreSQL数据库是一个服务, 可以通关cmd管理员关启：
+PostgreSQL数据库是一个服务, 可以通过cmd管理员关启：
 
 - 启动：`net start postgresql-x64-16`  
 - 关闭：`net stop postgresql-x64-16`
