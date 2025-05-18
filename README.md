@@ -120,6 +120,7 @@ git clone --recursive https://git.xeondev.com/wickedwaifus/wicked-waifus-rs.git
 ```
 等待主仓库克隆完成后，可以拉取推荐的自动buff分支（by:Ruuby@Discord）  
 ```bash
+cd wicked-waifus-rs  
 git fetch origin refs/pull/6/head:pr-6-test
 
 ```
