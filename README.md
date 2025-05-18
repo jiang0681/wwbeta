@@ -108,12 +108,12 @@ if %errorlevel% neq 0 (
     powershell -Command "Start-Process '%~f0' -Verb RunAs"
     exit
 )
-cd /d "F:\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64"
+cd /d "F:\example\Wuthering Waves(Beta)\Wuthering Waves (Beta) Game\Client\Binaries\Win64"
 launcher.exe
 pause
 ```
 
-保存即可。  
+保存即可。其中`F:\example\`仅为示例路径，请替换为你下载游戏的实际位置。  
 参考视频：  
 https://www.youtube.com/watch?v=kLA0kONBT_s
 
