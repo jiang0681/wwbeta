@@ -89,9 +89,13 @@ by: yuhkix@github
 [master/samples/](https://git.xeondev.com/ReversedRoomsMisc/process-launcher-rs/src/branch/master/samples/)  
 下载ww.toml文件, 重命名为config.toml，和launcher.exe一起，放到  
 `Wuthering Waves (Beta) Game\Client\Binaries\Win64` 目录下。  
-打开config.toml，  
-将`current_dir`等于`Wuthering Waves (Beta) Game\Client\Binaries\Win64`，  
-将`dll_list`等于`Wuthering Waves (Beta) Game\Client\Binaries\Win64\wicked-waifus-win-cn_beta_2_4_0-regular.dll`  
+打开config.toml，修改以下两个值：  
+
+```toml
+current_dir = 'Wuthering Waves (Beta) Game\Client\Binaries\Win64'  
+dll_list = ['Wuthering Waves (Beta) Game\Client\Binaries\Win64\wicked-waifus-win-cn_beta_2_4_0-regular.dll']
+```
+
 后保存。  
 新建文件命名为 `run_xavo_launcher.bat`，用记事本打开，写入：
 
