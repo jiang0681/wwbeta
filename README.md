@@ -8,7 +8,7 @@
 
 除了此教程，还有其他大佬的优秀教程也可借鉴，可自行食用：  
 [sunset的博客：wuwa-ps](https://blog.sunmkt.uk/article/wuwa-ps/)  
-[频道御用视频教程-from youtube](https://www.youtube.com/watch?v=rOWBm-oJYT8)  
+[频道御用视频教程-from youtube](https://youtu.be/AUeqUA60lwI)  
 
 本文可能部分借鉴了上述大佬们的经验，再次致以感谢。  
 
